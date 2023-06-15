@@ -179,13 +179,80 @@
     color: #000;
   }
 
-  @media screen and (min-width: 500px) {
+  @media screen and (max-width: 768px) {
+    .profil h1 {
+      font-size: 19px;
+      margin: 10px 0;
+    }
+    .profil {
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: auto;
+    }
+    
     .profil img {
       margin-top: 135px;
-      width: 50vh;
-      height: 55vh;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
-      border: 2px solid black;
+      border: 1px solid black;
     }
+
+    .navigasi {
+      text-align: center;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 999;
+    }
+
+    navigasi ul {
+      list-style: inherit;
+      padding: 0;
+      margin-top: 20px;
+    }
+    
+    .navigasi li {
+      display: inline;
+      margin-right: 2px;
+    }
+    
+    .navigasi a {
+      text-decoration: none;
+      color: #333;
+      padding: 3px 5px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+    
+    .navigasi a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .scrolling-text-container {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .scrolling-text {
+      animation: scrolling 10s linear infinite;
+      white-space: nowrap;
+    }
+    
+    @keyframes scrolling {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+
+  
   }
 
