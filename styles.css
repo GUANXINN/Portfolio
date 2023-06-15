@@ -178,5 +178,14 @@
   .contact-email a:hover {
     color: #000;
   }
-  
+
+  @media screen and (min-width: 500px) {
+    .profil img {
+      margin-top: 135px;
+      width: 50vh;
+      height: 55vh;
+      border-radius: 50%;
+      border: 2px solid black;
+    }
+  }
 
